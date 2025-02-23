@@ -76,3 +76,19 @@ def partition(low, high):
 
     data[i + 1], data[high] = data[high], data[i + 1]
     return i + 1
+
+def start_sort():
+    """Start the sorting process based on user selection."""
+    if not data:
+        messagebox.showerror("Error", "Please generate data first!")
+        return
+
+    algo = algo_menu.get()
+    if algo == 'Bubble Sort':
+        bubble_sort()
+    elif algo == 'Insertion Sort':
+        insertion_sort()
+    elif algo == 'Quick Sort':
+        quick_sort(0, len(data) - 1)
+
+    draw_data(data, ['green' for _ in range(len(data))])

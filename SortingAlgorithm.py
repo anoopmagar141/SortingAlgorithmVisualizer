@@ -92,3 +92,36 @@ def start_sort():
         quick_sort(0, len(data) - 1)
 
     draw_data(data, ['green' for _ in range(len(data))])
+
+
+# Initialize Tkinter
+root = tk.Tk()
+root.title("Sorting Algorithm Visualizer")
+root.geometry("700x500")
+root.resizable(False, False)
+
+# UI Frame
+frame = tk.Frame(root, pady=10)
+frame.pack()
+
+algo_menu = ttk.Combobox(frame, values=['Bubble Sort', 'Insertion Sort', 'Quick Sort'])
+algo_menu.set('Bubble Sort')
+algo_menu.pack(side=tk.LEFT, padx=5)
+
+generate_button = tk.Button(frame, text="Generate Data", command=generate_data, bg="#4CAF50", fg="white")
+generate_button.pack(side=tk.LEFT, padx=5)
+
+start_button = tk.Button(frame, text="Start Sorting", command=start_sort, bg="#2196F3", fg="white")
+start_button.pack(side=tk.LEFT, padx=5)
+
+# Matplotlib Figure
+fig, ax = plt.subplots()
+canvas = FigureCanvasTkAgg(fig, master=root)
+canvas.get_tk_widget().pack()
+
+# Initialize data
+data = []
+generate_data()
+
+# Start GUI Loop
+root.mainloop()

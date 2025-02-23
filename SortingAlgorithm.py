@@ -54,3 +54,25 @@ def insertion_sort():
         data[j + 1] = key
 
     draw_data(data, ['green' for _ in range(n)])
+
+def quick_sort(low, high):
+    """Perform Quick Sort and visualize it."""
+    if low < high:
+        pi = partition(low, high)
+        quick_sort(low, pi - 1)
+        quick_sort(pi + 1, high)
+        draw_data(data, ['green' if x <= high else 'blue' for x in range(len(data))])
+
+def partition(low, high):
+    """Partitioning function for Quick Sort."""
+    pivot = data[high]
+    i = low - 1
+    for j in range(low, high):
+        if data[j] < pivot:
+            i += 1
+            data[i], data[j] = data[j], data[i]
+            draw_data(data, ['red' if x == i or x == j else 'blue' for x in range(len(data))])
+            time.sleep(0.05)
+
+    data[i + 1], data[high] = data[high], data[i + 1]
+    return i + 1

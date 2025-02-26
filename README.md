@@ -24,7 +24,7 @@ before sorting :
 ![Screenshot 2025-02-23 212846](https://github.com/user-attachments/assets/4a349029-4fcd-4514-bd11-8fe562bd9842)
 
 
-after : 
+After : 
 
 ![Screenshot 2025-02-23 212911](https://github.com/user-attachments/assets/f43b3f71-1020-432b-b467-02d1718f32fc)
 

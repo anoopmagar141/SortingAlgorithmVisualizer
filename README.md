@@ -20,7 +20,7 @@ This code creates an interactive visualizer for sorting algorithms using Tkinter
 
 output :
 
-before sorting :
+Before sorting :
 
 ![Screenshot 2025-02-23 212846](https://github.com/user-attachments/assets/4a349029-4fcd-4514-bd11-8fe562bd9842)
 

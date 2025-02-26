@@ -19,6 +19,7 @@ This code creates an interactive visualizer for sorting algorithms using Tkinter
 #User Interaction: The user can select an algorithm from the dropdown and press a button to start the sorting process.
 
 output :
+
 before sorting :
 
 ![Screenshot 2025-02-23 212846](https://github.com/user-attachments/assets/4a349029-4fcd-4514-bd11-8fe562bd9842)

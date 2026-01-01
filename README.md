@@ -4,7 +4,6 @@
 
 
 
-
 This code creates an interactive visualizer for sorting algorithms using Tkinter and matplotlib. Here's how it works:
 
 # GUI Setup with Tkinter: The program creates a user interface with buttons and a dropdown menu for selecting sorting algorithms.
